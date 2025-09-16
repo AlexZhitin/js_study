@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task4</title>
 </head>
+
 <body>
     <pre>
         Завдання: 
@@ -15,13 +17,14 @@
     <script>
         let screenWidth = 1980; // ширина екрану
         let margins = 10; // відступи між блоками з описом товарів
-        let desieredBlockCount = 5; // кілкість блоків з описом, які повинні відобразитись в один рядок
+        let desiredBlockCount = 5; // кілкість блоків з описом, які повинні відобразитись в один рядок
 
         let width = null; // розрахуйте ширину блока та запишіть у цю змінну
 
-        width = (screenWidth - margins * (desieredBlockCount - 1)) / desieredBlockCount;
+        //width = (screenWidth - margins * (desiredBlockCount - 1)) / desiredBlockCount;
+        width = (screenWidth - (desiredBlockCount - 1) * margins) / desiredBlockCount;
         console.log(width);
     </script>
 </body>
-</html>
 
+</html>
