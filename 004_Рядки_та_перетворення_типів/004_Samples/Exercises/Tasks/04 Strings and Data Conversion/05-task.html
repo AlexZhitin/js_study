@@ -19,20 +19,20 @@
         let productPrice2 = 56;
         let productPrice3 = 12.50;
 
-        let productQuantity1 = +prompt(`Вкажіть кількість продуктів '${product1}', ціна ${productPrice1}`, 0);
+        let productQuantity1 = prompt(`Вкажіть кількість продуктів '${product1}', ціна ${productPrice1}`, 0);
         let priceItem1 = productPrice1 * productQuantity1;
-        alert(priceItem1)
+        alert(`Всього за всі товари ${product1} = ${priceItem1}`);
 
-        let productQuantity2 = +prompt(`Вкажіть кількість продуктів '${product2}', ціна ${productPrice2}`, 0);
+        let productQuantity2 = prompt(`Вкажіть кількість продуктів '${product2}', ціна ${productPrice2}`, 0);
         let priceItem2 = productPrice2 * productQuantity2;
-        alert(priceItem2);
+        alert(`Всього за всі товари ${product2} = ${priceItem2}`);
 
-        let productQuantity3 = +prompt(`Вкажіть кількість продуктів '${product3}', ціна ${productPrice3}`, 0);
+        let productQuantity3 = prompt(`Вкажіть кількість продуктів '${product3}', ціна ${productPrice3}`, 0);
         let priceItem3 = productPrice3 * productQuantity3;
-        alert(priceItem3);
+        alert(`Всього за всі товари ${product3} = ${priceItem3}`);
 
         let totalPrice = priceItem1 + priceItem2 + priceItem3;
-        alert(`Загальна сума: ${totalPrice}`);
+        alert(`Загальна сума за всі товари: ${totalPrice}`);
 
         // Виведіть на екран скільки користувачу потрібно заплатит за кожний продукт окремо та разом за всі продукти
         // використовуйте форматований вивід
